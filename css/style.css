@@ -1,0 +1,48 @@
+.main {
+width: 480px;
+margin: auto;
+
+background-color: aqua;
+}
+
+.header_btn {
+    display: block;
+    width: 23.4%;
+
+    background-color: brown;
+}
+
+.header {
+    display: flex;
+    height: 18px;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.input {
+    display: block;
+    width: 73%;
+    text-align: right;
+    box-shadow: inset 3px 3px 3px #bebcbc;
+    border: none;
+    outline: none;
+}
+
+.blok {
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+}
+
+.index {
+    background-color: antiquewhite;
+}
+
+.button {
+    box-shadow: inset 3px 3px 3px #bebcbc;
+}
