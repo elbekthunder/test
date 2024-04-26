@@ -9,29 +9,29 @@
 <body>
     <main class="main">
         <header class="header">
-            <button class="header_btn">C</button>
-             <input class="input" type="text" placeholder="0"> 
+            <button onclick="clearDisplay()" class="header_btn id-btn">C</button>
+             <input class="input" type="text" placeholder="0">
         </header>
         <div class="blok">
-          <button class="button id-btn">7</button>
-          <button class="button id-btn">8</button>
-          <button class="button id-btn">9</button>
-          <button class="button id-btn index">+</button>
+          <button onclick="appendToDisplay('7')" class="button id-btn">7</button>
+          <button onclick="appendToDisplay('8')" class="button id-btn">8</button>
+          <button onclick="appendToDisplay('9')" class="button id-btn">9</button>
+          <button onclick="appendToDisplay('+')" class="button id-btn index">+</button>
 
-          <button class="button id-btn">6</button>
-          <button class="button id-btn">5</button>
-          <button class="button id-btn">4</button>
-          <button class="button id-btn index">-</button>
+          <button onclick="appendToDisplay('6')" class="button id-btn">6</button>
+          <button onclick="appendToDisplay('5')" class="button id-btn">5</button>
+          <button onclick="appendToDisplay('4')" class="button id-btn">4</button>
+          <button onclick="appendToDisplay('-')" class="button id-btn index">-</button>
 
-          <button class="button id-btn">3</button>
-          <button class="button id-btn">2</button>
-          <button class="button id-btn">1</button>
-          <button class="button id-btn index">:</button>
+          <button onclick="appendToDisplay('3')" class="button id-btn">3</button>
+          <button onclick="appendToDisplay('2')" class="button id-btn">2</button>
+          <button onclick="appendToDisplay('1')" class="button id-btn">1</button>
+          <button onclick="appendToDisplay('/')" class="button id-btn index">:</button>
 
-          <button class="button id-btn">0</button>
-          <button class="button id-btn">.</button>
-          <button class="button id-btn index">=</button>
-          <button class="button id-btn index">*</button>
+          <button onclick="appendToDisplay('0')" class="button id-btn">0</button>
+          <button onclick="appendToDisplay('.')" class="button id-btn">.</button>
+          <button onclick="calculate()" class="button id-btn index">=</button>
+          <button onclick="appendToDisplay('*')" class="button id-btn index ">*</button>
         </div>
     </main>
     <script src="java.js"></script>

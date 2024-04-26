@@ -23,30 +23,16 @@ if(itemText !== "C" && itemText !== "=" ) {
    display.value += itemText; 
 }
 
-if(itemText === "=") {
-    display.value = evel(display.value);
-}
+
 
  });
 });
 
 
-// let display  = document.querySelector('.input');
+function calculate() {
+    display.value = eval(display.value)
+}
 
-// let buttons = Array.from(document.querySelectorAll(".button"));
-
-// buttons.map((button) => {
-// button.addEventListener("click", (e) =>{
-//     switch (e.target.innerText) {
-//         case "C":
-//             display.innerText = "0";
-//             break;
-//             default:
-//                 if (display.innerText === "0" && e.target.innerText !== ".") {
-//                      display.innerText = e.target.innerText;
-//                 }else{
-//                     display.innerText += e.target.innerText;
-//                 }
-//     }
-// });
-// });
+function clearDispalay() {
+    display.value = "" ;
+}
